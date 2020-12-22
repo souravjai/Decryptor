@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include<unistd.h>
 using namespace std;
 
 void draw_heart()
@@ -29,12 +28,8 @@ void greet()
     cout<<"       (<->) : The digit is present in password but wrongly placed."<<endl;
     cout<<"       ( X ) : The digit is not present in the password."<<endl;
     cout<<"\nNote: The 4-Digit password generted has every digit Unique ,i.e, no digit is repeated.\n"<<endl;
-    
-    for(int i=0;i<5;i++)
-    {
-        cout<<"The Game starts in "<<5-i<<" seconds"<<endl;
-        sleep(1);
-    }
+    cout<<"[CHALLENGE] BEAT THIS GAME IN 3 TURNS OR LESS.. "<<endl;
+    cout<<"The Game starts now...."<<endl;
     cout<<endl;
 }
 
@@ -120,7 +115,6 @@ int start_game()
     srand(time(0));
     cout<<"Generating a Number..."<<endl;
     
-    sleep(3);
     int output=0;
     do{
         output=1000+rand()%9000;
@@ -168,7 +162,9 @@ int start_game()
     }
     else
     cout<<"\ncongratulation You won in "<<turns<<" steps! BUT can you do better?"<<endl;
-    sleep(3);
+
+    if(turns<4)
+    cout<<"WOAH!You won the challenge mail me the screenshot at souravjaiswal2000@gmail.com to be a part of leaderboard"<<endl; 
     draw_heart();
     string s;
     cout<<"[Press Y] to Play again."<<endl;
