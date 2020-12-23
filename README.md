@@ -8,3 +8,10 @@ check it here: https://onlinegdb.com/OOVoYwwQK
 
 
 Mail: Souravjaiswal2000@gmail.com
+
+LeaderBoard :
+
+|      Name         | Score |
+|-------------------|-------|
+|Gourab Talukdar    |   2   |
+|Shreya  Sengupta   |   2   |
